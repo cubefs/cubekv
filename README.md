@@ -16,6 +16,7 @@ Master, Server, gRPC SDK
 
 use Badger or RocksDB as the local storage engine
 
+just the single-tenant mode - a server hosts only one shard
 
 ## Write Performance Optimization
 
