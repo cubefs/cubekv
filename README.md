@@ -22,4 +22,6 @@ just the single-tenant mode - a server hosts only one shard
 
 CubeFS WAL files
 
+Group commit
+
 
