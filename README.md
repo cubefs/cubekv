@@ -4,7 +4,7 @@ CubeKV is the distributed key-value store on top of CubeFS.
 
 ## Data Model
 
-space, (hashkey+sortkey) -> value
+space, (hashkey+sortkey) -> document
 
 A space can be partitioned into multiple shards for better write throughput.
 
@@ -14,14 +14,18 @@ Master, Server, gRPC SDK
 
 ### Server
 
-use Badger or RocksDB as the local storage engine
+use Badger as the local storage engine
 
-just the single-tenant mode - a server hosts only one shard
+a server container hosts one shard
 
 ## Write Performance Optimization
 
 CubeFS WAL files
 
 Group commit
+
+## Secondary Indexing
+
+Cubesearch consumes the WALs on CubeFS to build secondary indices
 
 
